@@ -1,0 +1,31 @@
+Dashboard Assignment Documentation
+
+As part of the task, I designed and developed a responsive React-based dashboard using TailwindCSS. Below is an overview of my work:
+
+What I Did
+	1.	Widget Selection:
+	•	Oscar Statistics Overview: A line chart displaying nominations and wins by year.
+	•	Search and Filter Panel: Allows users to filter movies by attributes like genre, year, and language.
+	2.	Dataset:
+	•	Used the provided dataset and enriched it with YouTube links for a better user experience.
+	3.	Implementation:
+	•	Used data in json file and React’s useState/useEffect for state management.
+	•	Ensured responsiveness with TailwindCSS.
+	•	Visualized data using apexChart for an engaging UI.
+	4.	Enhancements:
+	•	Added debounce search to improve performance.
+	•	Focused on a clean, mobile-first design.
+
+Trade-Offs
+	•	Focused on three widgets to deliver quality within the time frame.
+	•	Kept visualizations simple for better user understanding.
+
+Future Improvements
+	•	Add more widgets (e.g., heatmap for country insights).
+	•	Optimize performance further with caching and pagination.
+	•	Improve accessibility with ARIA labels and keyboard navigation.
+
+Let me know if you have any questions or need further details!
+
+This keeps it direct and easy to read.
+
