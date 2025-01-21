@@ -1,0 +1,94 @@
+.card {
+  position: relative;
+  max-width: 320px;
+  min-width: 320px;
+  max-height: 500px;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    max-width: 250px;
+    min-width: 250px;
+  }
+
+  @media (max-width: 425px) {
+    max-width: 300px;
+    min-width: 300px;
+  }
+
+  &:hover {
+    transform: translateY(-20px);
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    border-radius: 1.2em;
+  }
+
+  &::after {
+    filter: blur(30px);
+  }
+
+  .content {
+    position: relative;
+    padding: 10px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    font-weight: 800;
+    font-size: 10px;
+
+    .imageContainer {
+      border: 2px solid white;
+      height: 250px;
+      width: 100%;
+      border-radius: 10px;
+      .movieImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+
+    p {
+      font-size: 10px;
+      color: black;
+    }
+
+    .movieTitle {
+      color: white;
+      font-size: 20px;
+    }
+
+    .movieLanguage {
+      width: 100%;
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .languageTag {
+      background-color: #2b2c3770;
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 10px;
+      font-size: 10px;
+    }
+  }
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

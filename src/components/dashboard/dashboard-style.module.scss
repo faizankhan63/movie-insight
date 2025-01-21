@@ -1,0 +1,118 @@
+.mainWrapper {
+  background: radial-gradient(
+    circle,
+    rgba(67, 63, 251, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0px auto;
+  gap: 40px;
+  padding: 20px 80px;
+  @media (max-width: 768px) {
+    padding: 20px 40px;
+  }
+  @media (max-width: 425px) {
+    padding: 20px 20px;
+  }
+}
+.searchBarDiv {
+  margin: 0px auto;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: end;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+.inputField {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.518);
+  width: 200px;
+  color: white;
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid white;
+  }
+  height: 36px;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+  min-height: 100vh;
+}
+
+.genreTagsContainer {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  gap: 10px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.genreTagsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.clearGenresButton {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.clearGenresButtonHidden {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.genreTag {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+.activeTag {
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(45deg, #ffbc00, #ff0058);
+  color: white;
+  font-weight: bold;
+}
+
+.modalContent {
+  height: 500px;
+  width: 600px;
+  background-color: white;
+  border-radius: 10px;
+}
